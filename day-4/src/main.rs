@@ -20,7 +20,6 @@ fn main() -> io::Result<()> {
 
     let rc: i32 = forklift.len() as i32;
     let cc: i32 = forklift[0].len() as i32;
-
     loop {
 
         let mut acc_paper_inds: Vec<(usize, usize)> = vec![];
@@ -64,8 +63,6 @@ fn main() -> io::Result<()> {
                 forklift[r][c] = '.';
             }
         }
-        iteration += 1;
-
     }
 
     let elapsed = start_time.elapsed();
